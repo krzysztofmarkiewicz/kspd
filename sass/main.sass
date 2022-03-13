@@ -1,0 +1,258 @@
+$blue-color: #0392ff
+
+*, *::before, *::after
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: 'Montserrat', sans-serif
+    background-color: #333
+
+.blue-text
+    color: $blue-color
+
+.wrapper
+    width: 80%
+    margin: 0 auto
+h2
+    text-transform: uppercase
+    text-align: center
+
+.underline
+    margin: 0 auto 40px
+    width: 60px
+    height: 4px
+    background-color: $blue-color
+
+.scroll-fix::before
+    content: ''
+    display: block
+    height: 66px
+    margin-top: -66px
+
+.visibility
+    visibility: hidden
+
+.carousel-inner
+    height: 50%
+.jumbotron
+    text-align: center
+    margin: 0
+
+//NAVIGATION
+nav
+    text-transform: uppercase
+    transition: background-color .6s
+
+    a, .fas
+        color: white
+        transition: color .3s
+    a:hover
+        color: $blue-color
+    .navbar-brand
+        font-weight: bold
+    .active
+        color: $blue-color
+    span.fas
+        padding: 0 10px
+
+.shadow-bg
+    background-color: #000000cc
+//HEADER
+header
+    text-align: center
+    color: white
+    overflow: hidden
+
+    h1
+        padding: 10px
+        text-transform: uppercase
+        font-size: 30px
+    p
+        padding: 10px
+        font-size: 14px
+
+    .header-bg
+        position: relative
+        background-image: url('../img/welding-g822b31e4b_1280.jpg')
+        background-position: center
+        background-size: cover
+        height: 100vh
+        z-index: 0
+    .header-bg-heroimg
+        position: absolute
+        background-color: rgba(0, 0, 0, .8)
+        width: 100%
+        height: 100%
+        z-index: -1
+    .text-heroimg
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+        text-align: center
+
+    .fa-chevron-down
+        display: none
+
+//MAIN
+#about-us
+    span
+        margin-top: 20px
+        font-size: 30px
+    h3
+        font-size: 18px
+        text-transform: uppercase
+    p
+        font-size: 14px
+    .about-us-hover
+        transition: color .3s
+    .about-us-hover:hover
+        color: $blue-color
+
+#about-us-hero
+    color: white
+    overflow: hidden
+
+    .jumbotron
+        overflow: hidden
+        position: relative
+        padding: 60px 0
+        background-image: url('../img/man-gc6c45d971_1920.jpg')
+        z-index: 0
+        background-position: center
+        background-size: cover
+        i
+            font-size: 35px
+            padding: 20px
+        p
+            font-size: 14px
+    .about-us-hero-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,.7)
+        z-index: -1
+
+
+
+//oferty
+#offers
+    .jumbotron
+        background-color: #f9f9f9
+    .offer-wrap
+        max-width: 2560px
+        width: 95%
+        margin: 0 auto
+    .offer-box
+        margin: 20px 10px
+        padding: 30px
+        background-color: #fff
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, .6 )
+        transition: transform .3s
+        h3
+            color: $blue-color
+            text-transform: uppercase
+        span
+            font-weight: bold
+
+        i
+            padding: 0 5px
+            font-size: 23px
+
+        button
+            text-transform: uppercase
+            padding: 10px 20px
+
+        .offer
+            font-size: 30px
+            font-weight: bold
+
+    .offer-box:hover
+        transform: scale(1.05)
+    .offer-text
+        margin-top: 30px
+
+
+
+//KONTAKT
+#contact
+    color: white
+    .jumbotron
+        position: relative
+        background-image: url(../img/metal-gedda7cd3e_1920.jpg)
+        background-position: bottom
+        background-size: cover
+        bg
+        z-index: 0
+    .contact-hero-img
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 9, 27, 0.85)
+        z-index: -1
+    .contact-box
+        align-self: center
+        padding: 30px 0
+    h2
+        font-weight: bold
+    .underline
+        background-color: #ccc
+    h3
+        text-transform: uppercase
+        letter-spacing: 2px
+    a
+        color: inherit
+        text-decoration-color: none
+    i
+        font-size: 26px
+        padding: 10px 15px
+        transition: transform .2s
+
+    i:hover
+        transform: scale(2)
+
+footer
+    color: #fff
+    p
+        margin-bottom: 0
+        padding: 20px
+        text-align: center
+
+@media (min-width: 375px)
+
+    header
+        h1
+            font-size: 36px
+        p
+            font-size: 16px
+    #about-us-hero
+        .jumbotron
+
+            h3
+                font-size: 32px
+
+            p
+                font-size: 18px
+@media (min-width: 414px)
+    #about-us-hero
+        .jumbotron
+            padding: 80px 0
+
+@media ( min-width: 1920px )
+    .wrapper-fhd
+        width: 80%
+        margin: 0 auto
+
+@media (max-width: 414px)
+    #team
+        .card
+            .card-img-top
+                height: 250px

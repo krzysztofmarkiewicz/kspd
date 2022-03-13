@@ -1,0 +1,28 @@
+header h1 {
+  font-size: 42px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+#about-us-hero .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+#offers .offer-wrap {
+  width: 90%;
+}
+
+#offers .offer-info {
+  font-size: 22px;
+}
+/*# sourceMappingURL=medium.css.map */

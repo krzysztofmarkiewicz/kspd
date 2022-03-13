@@ -1,0 +1,361 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+
+.blue-text {
+  color: #0392ff;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.underline {
+  margin: 0 auto 40px;
+  width: 60px;
+  height: 4px;
+  background-color: #0392ff;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.carousel-inner {
+  height: 50%;
+}
+
+.jumbotron {
+  text-align: center;
+  margin: 0;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: background-color .6s;
+  transition: background-color .6s;
+}
+
+nav a, nav .fas {
+  color: white;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a:hover {
+  color: #0392ff;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+nav .active {
+  color: #0392ff;
+}
+
+nav span.fas {
+  padding: 0 10px;
+}
+
+.shadow-bg {
+  background-color: #000000cc;
+}
+
+header {
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+header h1 {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+header p {
+  padding: 10px;
+  font-size: 14px;
+}
+
+header .header-bg {
+  position: relative;
+  background-image: url("../img/welding-g822b31e4b_1280.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  z-index: 0;
+}
+
+header .header-bg-heroimg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+header .text-heroimg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+header .fa-chevron-down {
+  display: none;
+}
+
+#about-us span {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#about-us h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#about-us p {
+  font-size: 14px;
+}
+
+#about-us .about-us-hover {
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#about-us .about-us-hover:hover {
+  color: #0392ff;
+}
+
+#about-us-hero {
+  color: white;
+  overflow: hidden;
+}
+
+#about-us-hero .jumbotron {
+  overflow: hidden;
+  position: relative;
+  padding: 60px 0;
+  background-image: url("../img/man-gc6c45d971_1920.jpg");
+  z-index: 0;
+  background-position: center;
+  background-size: cover;
+}
+
+#about-us-hero .jumbotron i {
+  font-size: 35px;
+  padding: 20px;
+}
+
+#about-us-hero .jumbotron p {
+  font-size: 14px;
+}
+
+#about-us-hero .about-us-hero-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+#offers .jumbotron {
+  background-color: #f9f9f9;
+}
+
+#offers .offer-wrap {
+  max-width: 2560px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#offers .offer-box {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+#offers .offer-box h3 {
+  color: #0392ff;
+  text-transform: uppercase;
+}
+
+#offers .offer-box span {
+  font-weight: bold;
+}
+
+#offers .offer-box i {
+  padding: 0 5px;
+  font-size: 23px;
+}
+
+#offers .offer-box button {
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+#offers .offer-box .offer {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#offers .offer-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#offers .offer-text {
+  margin-top: 30px;
+}
+
+#contact {
+  color: white;
+}
+
+#contact .jumbotron {
+  position: relative;
+  background-image: url(../img/metal-gedda7cd3e_1920.jpg);
+  background-position: bottom;
+  background-size: cover;
+  z-index: 0;
+}
+
+#contact .contact-hero-img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 9, 27, 0.85);
+  z-index: -1;
+}
+
+#contact .contact-box {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 30px 0;
+}
+
+#contact h2 {
+  font-weight: bold;
+}
+
+#contact .underline {
+  background-color: #ccc;
+}
+
+#contact h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#contact a {
+  color: inherit;
+  -webkit-text-decoration-color: none;
+          text-decoration-color: none;
+}
+
+#contact i {
+  font-size: 26px;
+  padding: 10px 15px;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+#contact i:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+footer {
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 375px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  #about-us-hero .jumbotron h3 {
+    font-size: 32px;
+  }
+  #about-us-hero .jumbotron p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 414px) {
+  #about-us-hero .jumbotron {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 1920px) {
+  .wrapper-fhd {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 414px) {
+  #team .card .card-img-top {
+    height: 250px;
+  }
+}
+/*# sourceMappingURL=main.css.map */
