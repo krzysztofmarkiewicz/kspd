@@ -315,6 +315,34 @@ header .fa-chevron-down {
           transform: scale(2);
 }
 
+#announcement .announcement_wrap {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+}
+
+#announcement .announcement_wrap .close_announcement {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+}
+
+#announcement .announcement_wrap .announcement_text {
+  position: absolute;
+  padding: 15px 50px 50px 50px;
+  width: 100vw;
+  height: 100vh;
+  font-size: 14px;
+  background-color: #ffffff;
+  overflow: auto;
+}
+
 footer {
   color: #fff;
 }
