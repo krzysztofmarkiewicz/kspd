@@ -1,52 +1,5 @@
-TWORZENIE STRONY
-<!-- <div>
-        <ul>
-            <li>tworzymy strukture html</li>
-            <li>importujemy bootstrapa</li>
-            <li>ustawiamy link do css</li>
-            <li>import fontów</li>
-            <li>import awesome nad bopdy</li>
-            <li>import animate.css</li>
-            <li>importujemy script js</li>
-            <li>tworzymy meta tagi pod seo</li>
-            <li>dodajemy elermenty do strony. Wszystko opisane na getboostrap.com</li>
-            <li></li>
-        </ul>
-    </div> -->
-
-    tips:
-- tesxt tylkow paragrafach
---div jesli w srodku maja byc inne elemnty
-
-   -  w html ustaw scrool-behavior-smooth - płynne przesuwanie strony
-
-   - korzystając z animation.js do animowanego elememnty mosimy dodać:
-   class="os-animation" data-animation='nazwa_animacji_np_z_animate.css' data-delay='1s'
-
-   - w js komenda do nasłuchiwania cełej strony "document.addEventListener('DOMContentLoaded');"
-
-- scroll-fix 
-w css tworzymy klasę np 
-.scroll-fix::before
-    content: ''
-    display: block
-    height: (wysokość navbara)px
-    margin-top: -(wyskosc paska navbara)px
-
--fix na klikasz w gdziekolwiek na stronie przy otwartym menu i ono znika
-https://www.udemy.com/course/od-zera-do-front-end-developera-cz2/learn/lecture/15519508#bookmarks
-
-slick -swietne karuzele w js
-
-lightbox - galeria zdjec js
-
-
-- sekcje które nie mają rociagac sie na szerokosc strony pakowac do wrappera, wtedy mozna ustalic jedna szerokosc i przy wielkich rozdzielczosciach mozna ustawic wrapper na sztywno i tresc bedzie bardziej na srodku 
-   
-
-w js
-document.addEventListener('DOMContentLoaded', function (){}
-to to samo com
-$(document).ready(function(){}
-
-- POCZYTAC mix-blen-mode
+DODAWANIE OGŁOSZEŃ:
+-KLASA BUTTONU Z OFERTY MUSI MIEC TAKA SAMA KLASE JAK OFERTA.
+-KLASA TA MUSI BYC USTAWIONA JAKO OSTATNIA
+-MOZE BYC ICH MAKSYMALNIE 9
+-ICH NAZWY TO KOLJENO (AD1, AD2, ... ,AD9)

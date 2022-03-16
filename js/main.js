@@ -70,7 +70,7 @@ addEventListener('load', setHeightofferBox)
 
 //opens and closes offer(announcement_wrap)
 const offer = document.body.querySelectorAll('.announcement_wrap')
-const offerClose = document.body.querySelectorAll('.close_announcement')
+const offerClose = document.body.querySelectorAll('.announcement_closebutton')
 const offerBoxButton = document.body.querySelectorAll('.btn-offer')
 
 
@@ -79,17 +79,16 @@ offerBoxButton.forEach(el => {
     el.addEventListener('click', () => {
         const lastClassOfferBoxButton = el.className.split(' ') //make array from classes of button
         const x = lastClassOfferBoxButton[lastClassOfferBoxButton.length - 1]; //get the last class of button
-        offer.forEach(el => {// change display of right announcement_wrap to flex 
+        offer.forEach(el => { // change display of right announcement_wrap to flex 
             if (el.classList.contains(`${x}`)) {
                 el.style.display = 'flex'
             }
-
         })
     })
 })
 //close announcement_wrap
 offerClose.forEach(el => {
     el.addEventListener('click', () => {
-        el.parentElement.style.display = 'none'
+        el.closest(".announcement_wrap").style.display = 'none'
     })
 })
