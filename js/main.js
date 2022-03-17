@@ -23,31 +23,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //carousel from slick.js
 
-    $('.carousel-slick').slick({
-        autoplay: true,
-        autoplaySpeed: 3500,
-        mobileFirst: true,
-        slidesToShow: 1,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 1600,
-                settings: {
-                    slidesToShow: 4
-                }
-            }
-        ]
-    });
+    // $('.carousel-slick').slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 3500,
+    //     mobileFirst: true,
+    //     slidesToShow: 1,
+    //     responsive: [{
+    //             breakpoint: 768,
+    //             settings: {
+    //                 slidesToShow: 2
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 992,
+    //             settings: {
+    //                 slidesToShow: 3
+    //             }
+    //         },
+    //         {
+    //             breakpoint: 1600,
+    //             settings: {
+    //                 slidesToShow: 4
+    //             }
+    //         }
+    //     ]
+    // });
 
 
 });

@@ -264,6 +264,37 @@ header .fa-chevron-down {
   margin-top: 30px;
 }
 
+#gallery .carousel-item {
+  position: relative;
+  height: 500px;
+}
+
+#gallery .carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#gallery .carousel-caption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#gallery .carousel-indicators {
+  margin-bottom: 36px;
+}
+
+#gallery .card-deck {
+  display: block;
+  text-align: center;
+  margin: 0 20px;
+}
+
 #contact {
   color: white;
 }
@@ -292,7 +323,7 @@ header .fa-chevron-down {
   padding: 30px 0;
 }
 
-#contact h2 {
+#contact .contact-box h2 {
   font-weight: bold;
 }
 
@@ -300,12 +331,12 @@ header .fa-chevron-down {
   background-color: #ccc;
 }
 
-#contact h3 {
+#contact .underline h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-#contact a {
+#contact .underline a {
   color: inherit;
   -webkit-text-decoration-color: none;
           text-decoration-color: none;
@@ -338,29 +369,26 @@ header .fa-chevron-down {
 
 #announcement .announcement_wrap .announcement_text {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 15px 50px 50px 50px;
-  width: 80vw;
-  height: 80vh;
+  padding: 20px 50px 50px 50px;
+  width: 100vw;
+  height: 100vh;
   font-size: 14px;
   background-color: #ffffff;
-  border-radius: 25px;
   overflow: auto;
 }
 
 #announcement .announcement_wrap .announcement_text h3 {
+  color: #0392ff;
   text-transform: uppercase;
   text-transform: uppercase;
 }
 
 #announcement .announcement_wrap .announcement_closebutton {
   position: fixed;
-  top: 15%;
-  right: 15%;
+  top: 25px;
+  right: 25px;
   z-index: 1;
+  border-radius: 90px;
 }
 
 footer {
@@ -391,29 +419,6 @@ footer p {
 @media (min-width: 414px) {
   #about-us-hero .jumbotron {
     padding: 80px 0;
-  }
-  #announcement .announcement_wrap {
-    display: none;
-  }
-  #announcement .announcement_wrap .announcement_text {
-    position: absolute;
-    padding: 15px 50px 50px 50px;
-    width: 100vw;
-    height: 100vh;
-    font-size: 14px;
-    background-color: #ffffff;
-    border-radius: 0;
-    overflow: auto;
-  }
-  #announcement .announcement_wrap .announcement_text h3 {
-    text-transform: uppercase;
-    text-transform: uppercase;
-  }
-  #announcement .announcement_wrap .announcement_closebutton {
-    position: fixed;
-    top: 25px;
-    right: 25px;
-    z-index: 1;
   }
 }
 

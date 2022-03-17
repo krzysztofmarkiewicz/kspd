@@ -1,42 +1,4 @@
 #offers .offer-wrap {
   width: 70%;
 }
-
-#announcement .announcement_wrap {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-}
-
-#announcement .announcement_wrap .announcement_text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  padding: 15px 50px 50px 50px;
-  width: 80vw;
-  height: 80vh;
-  font-size: 14px;
-  background-color: #ffffff;
-  border-radius: 25px;
-  overflow: auto;
-}
-
-#announcement .announcement_wrap .announcement_text h3 {
-  text-transform: uppercase;
-  text-transform: uppercase;
-}
-
-#announcement .announcement_wrap .announcement_closebutton {
-  position: fixed;
-  top: 15%;
-  right: 15%;
-  z-index: 1;
-}
 /*# sourceMappingURL=small.css.map */
