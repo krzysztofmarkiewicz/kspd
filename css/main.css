@@ -160,6 +160,7 @@ header .fa-chevron-down {
 #about-us .about-us-hover {
   -webkit-transition: color .3s;
   transition: color .3s;
+  padding: 15px;
 }
 
 #about-us .about-us-hover:hover {
