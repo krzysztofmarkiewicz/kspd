@@ -14,16 +14,13 @@ header .fa-chevron-down {
 #offers .offer-wrap {
   width: 90%;
 }
-
 #offers .offer-wrap .card-title {
   font-size: 20px;
 }
-
 #offers .offer-wrap i {
   font-size: 15px;
   padding: 5px;
 }
-
 #offers .offer-wrap p {
   font-size: 14px;
 }
@@ -38,7 +35,6 @@ header .fa-chevron-down {
   background: rgba(0, 0, 0, 0.8);
   z-index: 9999;
 }
-
 #announcement .announcement_wrap .announcement_text {
   position: absolute;
   top: 50%;
@@ -53,12 +49,10 @@ header .fa-chevron-down {
   border-radius: 25px;
   overflow: auto;
 }
-
 #announcement .announcement_wrap .announcement_text h3 {
   text-transform: uppercase;
   text-transform: uppercase;
 }
-
 #announcement .announcement_wrap .announcement_closebutton {
   position: fixed;
   top: 15%;
@@ -80,16 +74,13 @@ header .fa-chevron-down {
     font-size: 22px;
   }
 }
-
 @media (min-width: 1400px) {
   #about-us-hero .jumbotron {
     padding: 120px 0;
   }
 }
-
 @media (min-width: 1900px) {
   #offers .offer-wrap {
     width: 70%;
   }
-}
-/*# sourceMappingURL=large.css.map */
+}/*# sourceMappingURL=large.css.map */

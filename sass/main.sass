@@ -151,38 +151,45 @@ header
         max-width: 2560px
         width: 95%
         margin: 0 auto
-    .offer-box
+    .box
         display: flex
         flex-direction: column
-        justify-content: center
-        margin: 20px 10px
-        padding: 30px
-        background-color: #fff
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, .6 )
-        transition: transform .3s
-        h3
-            color: $blue-color
-            text-transform: uppercase
-        span
-            font-weight: bold
 
-        i
-            padding: 0 5px
-            font-size: 23px
+        .offer-box
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            height: 100%
+            margin: 20px 10px
+            padding: 30px
+            background-color: #fff
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, .6 )
+            transition: transform .3s
+            h3
+                color: $blue-color
+                text-transform: uppercase
+            span
+                font-weight: bold
 
-        button
-            text-transform: uppercase
-            padding: 10px 20px
+            i
+                padding: 0 5px
+                font-size: 23px
 
-        .offer
-            font-size: 30px
-            font-weight: bold
+            button
+                text-transform: uppercase
+                padding: 10px 20px
+            .offer-info
+                align-items: flex-start
 
-    .offer-box:hover
-        transform: scale(1.05)
+            .offer
+                font-size: 30px
+                font-weight: bold
 
-    .offer-text
-        margin-top: 30px
+        .offer-box:hover
+            transform: scale(1.05)
+
+        .offer-text
+            margin-top: 30px
 
 #gallery
     .carousel-item

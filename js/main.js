@@ -53,18 +53,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //set Height of all offer-box to the height of the highest offer-box
-const offerBoxes = document.body.querySelectorAll('.offer-box')
-const setHeightofferBox = () => {
-    const box = []
-    for (const offerBox of offerBoxes) {
-        box.unshift(offerBox.offsetHeight)
-    }
-    for (const offerBox of offerBoxes) {
-        offerBox.style.height = `${Math.max(...box)}px`
-    }
-}
-addEventListener('resize', setHeightofferBox)
-addEventListener('load', setHeightofferBox)
+// const offerBoxes = document.body.querySelectorAll('.offer-box')
+// const setHeightofferBox = () => {
+//     const box = []
+//     for (const offerBox of offerBoxes) {
+//         box.unshift(offerBox.offsetHeight)
+//     }
+//     for (const offerBox of offerBoxes) {
+//         offerBox.style.height = `${Math.max(...box)}px`
+//     }
+// }
+// addEventListener('resize', setHeightofferBox)
+// addEventListener('load', setHeightofferBox)
 
 
 

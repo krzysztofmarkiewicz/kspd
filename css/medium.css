@@ -1,7 +1,6 @@
 header h1 {
   font-size: 42px;
 }
-
 header p {
   font-size: 20px;
 }
@@ -21,8 +20,6 @@ header p {
 #offers .offer-wrap {
   width: 90%;
 }
-
 #offers .offer-info {
   font-size: 22px;
-}
-/*# sourceMappingURL=medium.css.map */
+}/*# sourceMappingURL=medium.css.map */
